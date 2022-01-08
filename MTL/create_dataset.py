@@ -1,6 +1,6 @@
 # modified from https://github.com/lorenmt/mtan/blob/master/im2im_pred/create_dataset.py
 
-from torch.utils.data.dataset import Dataset, DataLoader
+from torch.utils.data import Dataset, DataLoader
 import os
 import torch
 import torch.nn.functional as F
@@ -125,7 +125,7 @@ class office_Dataset(Dataset):
     def __len__(self):
         return len(self.img_list)
     
-def office_dataloader(dataset, batchsize):
+def office_dataloader(dataset, batchsize, dataroot):
     if dataset == 'office-31':
         tasks = ['amazon', 'dslr', 'webcam']
     elif dataset == 'office-home':

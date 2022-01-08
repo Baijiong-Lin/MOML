@@ -22,22 +22,25 @@ This repository contains the source code of our paper "Multi-Objective Meta Lear
 
 1. Training on the NYUv2 dataset with the MOML method, you can run the code below (default option is training without data augmentation)
 
-```python
-python ./MTL/moml_nyu.py --gpu_id [GPU_ID] --model [DMTL, MTAN] --MGDA --dataset_path [ROOT]
+```shell
+cd ./MTL
+python moml_nyu.py --gpu_id [GPU_ID] --model [DMTL, MTAN] --MGDA --dataset_path [ROOT]
 ```
 
 2. Training on the Office-31 or Office-Home dataset with the MOML method, you can run the code below
 
-```python
-python ./MTL/moml_office.py --gpu_id [GPU_ID] --model [DMTL, MTAN] --dataset [office-31, office-home] --batchsize 64 --MGDA --dataroot [ROOT]
+```shell
+cd ./MTL
+python moml_office.py --gpu_id [GPU_ID] --model [DMTL, MTAN] --dataset [office-31, office-home] --batchsize 64 --MGDA --dataroot [ROOT]
 ```
 
 ### SSDA
 
 Training on the Office-31 dataset with the MOML+MME method, you can run the code below
 
-```python
-python ./SSDA/moml_MME.py --gpu_id [GPU_ID] --source [SOURCE] --taeget [TARGET] --MGDA
+```shell
+cd ./SSDA
+python moml_MME.py --gpu_id [GPU_ID] --source [SOURCE] --taeget [TARGET] --MGDA
 ```
 
 ## Citation

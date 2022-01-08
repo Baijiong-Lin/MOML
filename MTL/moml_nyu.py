@@ -161,8 +161,6 @@ for index in range(total_epoch):
                 grads[kn] = grads[kn] / gn[kn]
 
             sol, _ = MinNormSolver.find_min_norm_element([grads[kn] for kn in range(task_num)])
-            if (k+1) % 20 == 0:
-                print('mgda weight:', sol)
             del grads, gn, loss_valid_data
         else:
             sol = [1]*task_num

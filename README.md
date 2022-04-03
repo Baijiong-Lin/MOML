@@ -62,4 +62,4 @@ Thanks for the public code base https://github.com/lorenmt/mtan, https://github.
 
 ## Contact
 
-If you have any questions, please contact `linbj@mail.sustech.edu.cn`.
+If you have any questions, please contact `bj.lin.email@gmail.com`.

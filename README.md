@@ -59,6 +59,8 @@ If you found this code/work to be useful in your own research, please consider c
   title={Multi-Objective Meta-Learning},
   author={Ye, Feiyang and Lin, Baijiong and Yue, Zhixiong and Zhang, Yu and Tsang, Ivor},
   journal={Artificial Intelligence},
+  volume={335},
+  pages={104184},
   year={2024}
 }
 ```
